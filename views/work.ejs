@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Work</title>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <span
+        ><i class="fa-solid fa-briefcase"></i
+        ><a href="/" class="today-link">Home</a></span
+      >
+      <span
+        ><i class="fa-regular fa-calendar"></i
+        ><a href="/work" class="work-link">Work</a></span
+      >
+    </nav>
+    <h1 class="title"><%= day %></h1>
+    <div class="container">
+      <div class="todos-container">
+        <p class="todo-title">
+          To-Do List
+          <i class="fa-solid fa-book fa-lg" style="color: #2563eb"></i>
+        </p>
+        <ul class="worktodo-list"></ul>
+      </div>
+      <form action="" class="todo-form">
+        <input type="search" placeholder="Insert new todo" class="input" />
+        <button class="fa-solid fa-plus btn"></button>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/520a2b7042.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="work.js"></script>
+  </body>
+</html>

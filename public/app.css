@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(#8b5cf6, #2563eb);
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  color: white;
+}
+
+.nav > span > a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.nav > span:focus {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+.title {
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.input {
+  padding: 0.5rem;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2563eb;
+  border: none;
+}
+
+.container {
+  border: rgb(235, 235, 235) solid 2px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  list-style: none;
+  padding: 0;
+}
+.worktodo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  list-style: none;
+  padding: 0;
+}
+.todo-title {
+  font-weight: 600;
+  font-size: large;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: rgb(235, 235, 235) 2px solid;
+}
+.fa-book {
+  margin-left: 10px;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: rgb(235, 235, 235) 2px solid;
+  padding-bottom: 20px;
+}
+.items > input:checked + .todo-item {
+  text-decoration: line-through;
+  text-decoration-color: crimson;
+}
+
+.todo-item {
+  text-align: start;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.items > input {
+  margin: 0;
+}
+
+.fa-trash {
+  color: #2563eb;
+}
+
+.fa-trash {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
